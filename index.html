@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Content Locked Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Locker</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #locker-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>Click the button below to unlock the content.</p>
-    
-    <button onclick="_GK()">Unlock Content</button>
-
-    <script type="text/javascript">
-        var YijWt_gpa_ESIMjc = {"it":4528678,"key":"cd3c1"};
-    </script>
-    <script src="https://dlk457skl57zp.cloudfront.net/9369618.js"></script>
-    <script>
-        // This script runs the content locker
-        _GK();
-    </script>
+    <div id="locker-container">
+        <script type="text/javascript">
+            var YijWt_gpa_ESIMjc = {"it":4528678,"key":"cd3c1"};
+        </script>
+        <script src="https://dlk457skl57zp.cloudfront.net/9369618.js"></script>
+        <script>_GK();</script>
+    </div>
 </body>
 </html>
